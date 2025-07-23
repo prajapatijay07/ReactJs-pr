@@ -58,22 +58,23 @@ body {
 
 .btn-wrapper {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 14px 30px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 14px;
+  border-radius: 12px;
   cursor: pointer;
-  min-width: 110px;
+  min-width: 90px;
   color: white;
   transition: all 0.3s ease;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -104,8 +105,9 @@ body {
   }
 
   .btn {
-    min-width: 90px;
-    padding: 12px 20px;
+    min-width: 80px;
+    padding: 10px 14px;
+    font-size: 1rem;
   }
 
   .counter-number {
@@ -114,5 +116,9 @@ body {
 
   .counter-heading {
     font-size: 1.8rem;
+  }
+
+  .btn-wrapper {
+    gap: 10px;
   }
 }
