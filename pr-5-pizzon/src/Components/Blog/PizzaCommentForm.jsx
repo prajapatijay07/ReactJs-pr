@@ -22,7 +22,7 @@ function PizzaCommentForm() {
   };
 
   return (
-    <Container className="my-5" style={{ marginLeft: "120px" }}>
+    <Container className="my-5">
       {/* Title */}
       <h4
         style={{
@@ -51,7 +51,7 @@ function PizzaCommentForm() {
       <Form onSubmit={handleSubmit}>
         <Row className="mb-3">
           {/* Name */}
-          <Col xs={12} md={6} className="mb-3 mb-md-0">
+          <Col xs={12} md={6} className="mb-3">
             <Form.Group controlId="formName">
               <Form.Control
                 type="text"
@@ -64,7 +64,7 @@ function PizzaCommentForm() {
                   padding: "12px 20px",
                   width: "492px",
                   height: "49px",
-                  fontSize: "16px",
+                  fontSize: "16px"
                 }}
               />
             </Form.Group>

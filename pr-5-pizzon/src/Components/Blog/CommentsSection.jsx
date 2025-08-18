@@ -33,7 +33,7 @@ function CommentsSection() {
           fontWeight: "700",
           fontSize: "34px",
           marginBottom: "24px",
-          marginLeft: "60px", 
+          marginLeft: "130px", 
         }}
       >
         4 Comments
@@ -47,7 +47,7 @@ function CommentsSection() {
             border: "1px solid #eee",
             borderRadius: "8px",
             padding: "45px",
-            margin: "40px 60px", 
+            margin: "40px auto",
             width: "1024px",
             height: "272px",
             boxSizing: "border-box",
