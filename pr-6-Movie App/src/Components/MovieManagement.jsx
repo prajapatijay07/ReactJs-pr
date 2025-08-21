@@ -1,4 +1,5 @@
 import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
+import MoviesInner from "./Movies";
 
 const slides = [
   {
@@ -42,6 +43,7 @@ const MovieManagement = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+      <MoviesInner/>
 
       <h2 className="text-center mb-4 fw-bold" style={{ color: "var(--button-purple)" }}>
         Why build Movie Collector?
