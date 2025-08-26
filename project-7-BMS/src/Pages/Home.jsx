@@ -9,18 +9,18 @@ import banner2 from '../assets/carousel2.jpg';
 import banner3 from '../assets/carousel3.jpg';
 
 // Movie Posters
-import posterCooli from '../assets/coolie.jpg';
 import posterWar2 from '../assets/war2.jpg';
+import Narsimha from '../assets/Narstmha.jpg';
 import posterSaiyaara from '../assets/saiyaara.jpg';
 import posterCoolie from '../assets/coolie.jpg';
 
 const Home = () => {
   const featuredMovies = [
-    
-    { id: 1, title: 'War 2', image: posterCooli, rating: 8.2, genre: 'Action, Thriller', language: 'Hindi' },
+
     { id: 1, title: 'War 2', image: posterWar2, rating: 8.2, genre: 'Action, Thriller', language: 'Hindi' },
-    { id: 2, title: 'Saiyaara', image: posterSaiyaara, rating: 7.8, genre: 'Romance, Drama', language: 'Hindi' },
-    { id: 3, title: 'Coolie: The Powerhouse', image: posterCoolie, rating: 8.5, genre: 'Action, Drama', language: 'Hindi' },
+    { id: 2, title: 'Mahavatar Narsimha', image: Narsimha, rating: 9.6, genre: 'Action, Animation', language: 'Hindi' },
+    { id: 3, title: 'Saiyaara', image: posterSaiyaara, rating: 7.8, genre: 'Romance, Drama', language: 'Hindi' },
+    { id: 4, title: 'Coolie: The Powerhouse', image: posterCoolie, rating: 8.5, genre: 'Action, Drama', language: 'Hindi' },
   ];
 
   const handleAddToCart = (movie) => {
@@ -55,38 +55,43 @@ const Home = () => {
       </h2>
       <Row className="mb-5">
         {featuredMovies.map((movie) => (
-  <Col md={3} key={movie.id} className="mb-4">
-    <Link to={`/movies/${movie.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-      <Card className="h-100 shadow-sm">
-        <Card.Img
-          variant="top"
-          src={movie.image}
-          style={{ height: '550px', objectFit: 'cover', width: '100%' }}
-        />
-        <Card.Body>
-          <Card.Title>{movie.title}</Card.Title>
-          <div className="d-flex justify-content-between align-items-center mb-2">
-            <span className="text-warning">
-              <FaStar className="me-1" /> {movie.rating}/10
-            </span>
-            <span className="badge bg-primary">{movie.language}</span>
-          </div>
-          <Card.Text className="text-muted small">{movie.genre}</Card.Text>
-          <Button
-            variant="danger"
-            className="w-100"
-            onClick={(e) => {
-              e.preventDefault(); 
-              handleAddToCart(movie);
-            }}
-          >
-            <FaTicketAlt className="me-2" /> Add Ticket
-          </Button>
-        </Card.Body>
-      </Card>
-    </Link>
-  </Col>
-))}
+          <Col md={3} key={movie.id} className="mb-4">
+            <Link
+              to={`/featured/${movie.id}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+         
+
+              <Card className="h-100 shadow-sm">
+                <Card.Img
+                  variant="top"
+                  src={movie.image}
+                  style={{ height: '550px', objectFit: 'cover', width: '100%' }}
+                />
+                <Card.Body>
+                  <Card.Title>{movie.title}</Card.Title>
+                  <div className="d-flex justify-content-between align-items-center mb-2">
+                    <span className="text-warning">
+                      <FaStar className="me-1" /> {movie.rating}/10
+                    </span>
+                    <span className="badge bg-primary">{movie.language}</span>
+                  </div>
+                  <Card.Text className="text-muted small">{movie.genre}</Card.Text>
+                  <Button
+                    variant="danger"
+                    className="w-100"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleAddToCart(movie);
+                    }}
+                  >
+                    <FaTicketAlt className="me-2" /> Add Ticket
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Link>
+          </Col>
+        ))}
 
       </Row>
 

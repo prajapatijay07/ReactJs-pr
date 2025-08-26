@@ -36,7 +36,7 @@ const MovieDetail = () => {
   }
 
   return (
-    <Container className="my-5">
+    <Container className="my-5 pt-5">
       <Row className="align-items-start">
         {/* Movie Poster */}
         <Col md={4} className="mb-4 mb-md-0 mt-4">
@@ -46,7 +46,7 @@ const MovieDetail = () => {
               alt={movie.title}
               style={{
                 width: '100%',
-                height: '400px',
+                height: '550px',
                 objectFit: 'cover',
               }}
             />
