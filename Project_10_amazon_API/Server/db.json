@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": "44bd"
+    },
+    {
+      "id": "55c6",
+      "title": "Active Wash Detergent Powder",
+      "price": 359,
+      "originalPrice": 800,
+      "description": "Amazon Brand - Presto! Active Wash Detergent Powder | 8 Kg | Tough On Stains | Gentle On Fabrics | Colour-Safe | Refreshing Fragrance | Machine And Hand Wash",
+      "category": "fashion",
+      "brand": "Hand Wash",
+      "image": "https://m.media-amazon.com/images/I/61hx-ExBRhL._SX679_.jpg",
+      "inStock": true,
+      "features": [
+        "Modern athletic fit"
+      ],
+      "specifications": {
+        "Material": "100% Cotton",
+        "Color": "White",
+        "Weight": "450g",
+        "Dimensions": ""
+      },
+      "rating": {
+        "rate": 4,
+        "count": 149
+      }
+    }
+  ]
+}
