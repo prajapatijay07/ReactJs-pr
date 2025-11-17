@@ -40,10 +40,12 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </main>
-
       <Footer />
     </>
   );
 };
 
 export default App;
+
+
+
