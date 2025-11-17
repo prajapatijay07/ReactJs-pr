@@ -10,6 +10,9 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import AddMovie from "./Components/AddMovie";
 import EditMovie from "./Components/EditMovie";
+import BookingPage from "./Components/BookingPage";
+import MyBookings from "./Components/MyBookings";
+import Movies from "./Components/Movies";
 import MovieDetails from "./Components/MovieDetails";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
@@ -29,6 +32,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/add-movie" element={<AddMovie />} />
           <Route path="/edit-movie/:id" element={<EditMovie />} /> 
+          <Route path="/book/:id" element={<BookingPage />} />    
+          <Route path="/my-bookings" element={<MyBookings />} />
+          <Route path="/movies" element={<Movies />} />
           <Route path="/movie/:id" element={<MovieDetails />} />  
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
